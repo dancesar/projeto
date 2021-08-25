@@ -1,0 +1,13 @@
+version: '3'
+
+services:
+  mysql.agenda-petshop:
+    image: mysql: 5.6
+    ports:
+      - "3308:3306"
+    environment: 
+      MYSQL_ROOT_PASSWORD: admin
+      MYSQL_USER: dancesar
+      MYSQL_PASSWORD: 05041979
+    volumes:
+      - mysql.agenda-petshop:/var/lib/mysql
